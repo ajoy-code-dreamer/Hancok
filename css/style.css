@@ -1,0 +1,32 @@
+/* ============== import area start here =================== */
+/* ============== import area end here =================== */
+
+/* ============= common css start here ================ */
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+ul,ol,menu{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+h1,h2,h3,h4,h5,h6,p,ul,ol,menu,div{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    min-width: 1320;
+    margin: 0 auto;
+}
+
+/* ============= common css end here ================ */
+
+
+/* =============== navBar css start here ================= */
+/* =============== navBar css end here ================= */
+
