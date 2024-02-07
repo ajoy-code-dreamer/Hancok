@@ -1,32 +1,129 @@
 /* ============== import area start here =================== */
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200;300;400;500;600;700;800;900&family=Oswald:wght@200;300;400;500;600;700&display=swap");
 /* ============== import area end here =================== */
+/* ============ css variables ============= */
+:root {
+  /* === font family === */
+  --oswald-font: "Oswald", sans-serif;
+  --barlow-font: "Barlow Condensed", sans-serif;
+  /* === font family === */
+  /* === font weight === */
+  --light-weight: 300;
+  --regular-weight: 400;
+  --medium-weight: 500;
+  --semi-bold-weight: 600;
+  --bold-weight: 700;
+
+  /* === font weight === */
+  /* === colors === */
+  --white-clr: #fff;
+  --secondary-text-clr: #dddddd;
+  --primary-clr: #ff4655;
+  --primary-bg-clr: #121212;
+  --secondary-bg-clr: #191919;
+  /* === colors === */
+  /* === method === */
+  --transition: all 0.3s linear;
+  /* === method === */
+}
+/* ============ css variables ============= */
 
 /* ============= common css start here ================ */
-*{
-    margin: 0;
-    padding: 0;
-    outline: none;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
 }
-ul,ol,menu{
-    list-style-type: none;
+ul,
+ol,
+menu {
+  list-style-type: none;
 }
-a{
-    text-decoration: none;
-    display: inline-block;
+a {
+  text-decoration: none;
+  display: inline-block;
 }
-h1,h2,h3,h4,h5,h6,p,ul,ol,menu,div{
-    margin: 0;
-    padding: 0;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+menu,
+div {
+  margin: 0;
+  padding: 0;
 }
-.container{
-    min-width: 1320;
-    margin: 0 auto;
+img {
+  vertical-align: middle;
 }
-
+.container {
+  min-width: 920;
+  margin: 0 auto;
+}
 /* ============= common css end here ================ */
 
-
 /* =============== navBar css start here ================= */
-/* =============== navBar css end here ================= */
+nav {
+  max-width: 100%;
+  background-color: var(--primary-bg-clr);
+  padding: 25px 0;
+}
+.nav__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav__logo {
+  max-width: 124px;
+  max-height: 42px;
+  overflow: hidden;
+  object-fit: cover;
+  object-position: center;
+}
+.nav__logo picture img {
+  width: 100%;
+  height: 100%;
+}
+.nav__menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 30px;
+  margin: 0 454px 0 60px;
+}
+.nav__item {
+  font-family: var(--oswald-font);
+  color: var(--secondary-text-clr);
+  font-weight: var(--regular-weight);
+  font-size: 16px;
+  transition: var(--transition);
+}
+.nav__item:hover {
+  color: var(--primary-clr);
+}
+.nav__icon__wrapper {
+  display: flex;
+  align-items: center;
+  column-gap: 25px;
+}
+.nav__icon {
+  color: var(--white-clr);
+  font-weight: var(--regular-weight);
+  font-size: 22px;
+  transition: var(--transition);
+}
+.nav__icon:hover {
+  color: var(--primary-clr);
+}
 
+.nav--singIN {
+  font-size: 16px;
+  padding-left: 7px;
+}
+
+/* =============== navBar css end here ================ */
