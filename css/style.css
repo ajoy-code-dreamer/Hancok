@@ -62,7 +62,7 @@ img {
   vertical-align: middle;
 }
 .container {
-  min-width: 920;
+  max-width: 920;
   margin: 0 auto;
 }
 /* ============= common css end here ================ */
