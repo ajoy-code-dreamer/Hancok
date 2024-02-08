@@ -13,14 +13,17 @@
   --medium-weight: 500;
   --semi-bold-weight: 600;
   --bold-weight: 700;
-
   /* === font weight === */
+  /* === font size === */
+  --pera-font-size: 16px;
+  /* === font size === */
   /* === colors === */
   --white-clr: #fff;
   --secondary-text-clr: #dddddd;
   --primary-clr: #ff4655;
   --primary-bg-clr: #121212;
   --secondary-bg-clr: #191919;
+  --black-clr:#000;
   /* === colors === */
   /* === method === */
   --transition: all 0.3s linear;
@@ -61,17 +64,28 @@ div {
 img {
   vertical-align: middle;
 }
+body {
+  position: relative;
+}
 .container {
-  max-width: 920;
+  max-width: 1320px;
   margin: 0 auto;
+}
+.dis--flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 /* ============= common css end here ================ */
 
 /* =============== navBar css start here ================= */
 nav {
-  max-width: 100%;
-  background-color: var(--primary-bg-clr);
+  width: 100%;
+  background-color: transparent;
   padding: 25px 0;
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 .nav__wrapper {
   display: flex;
@@ -100,8 +114,12 @@ nav {
   font-family: var(--oswald-font);
   color: var(--secondary-text-clr);
   font-weight: var(--regular-weight);
-  font-size: 16px;
+  font-size: var(--pera-font-size);
   transition: var(--transition);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
 }
 .nav__item:hover {
   color: var(--primary-clr);
@@ -116,14 +134,114 @@ nav {
   font-weight: var(--regular-weight);
   font-size: 22px;
   transition: var(--transition);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
 }
 .nav__icon:hover {
   color: var(--primary-clr);
 }
 
 .nav--singIN {
-  font-size: 16px;
+  font-size: var(--pera-font-size);
   padding-left: 7px;
 }
 
 /* =============== navBar css end here ================ */
+/* =============== banner section css end here ================ */
+#banner {
+  max-width: 100%;
+  padding: 337px 0 103px 0;
+  background-image: url(../images/banner_bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.banner__content {
+  font-family: var(--oswald-font);
+  color: var(--white-clr);
+}
+.banner__heading_top {
+  font-weight: var(--regular-weight);
+
+  font-size: 27px;
+}
+.banner__heading {
+  font-weight: var(--semi-bold-weight);
+  font-size: 60px;
+  line-height: 1.5;
+  position: relative;
+}
+.banner__heading::after {
+  position: absolute;
+  content: "";
+  width: 90px;
+  height: 4px;
+  background-color: var(--white-clr);
+  bottom: 18px;
+  left: 520px;
+}
+.banner__details {
+  max-width: 523px;
+  font-weight: var(--regular-weight);
+  font-size: var(--pera-font-size);
+  line-height: 1.5;
+  padding-bottom: 48px;
+}
+.banner__btn {
+  padding: 13px 24px;
+  font-family: var(--oswald-font);
+  font-weight: var(--regular-weight);
+  font-size: var(--pera-font-size);
+  color: var(--primary-bg-clr);
+  background-color: var(--white-clr);
+  vertical-align: middle;
+  transition: var(--transition);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
+  margin-bottom: 300px;
+}
+.banner__btn:hover {
+  color: var(--white-clr);
+  background-color: var(--primary-clr);
+}
+.banner__icon__wrapper{
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+}
+.banner__iconBody{
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  background-color: #D9D9D9;
+  transition: var(--transition);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
+}
+.banner__iconBody:hover{
+  background-color: var(--primary-clr);
+}
+.banner__icon{
+  font-size: 18px;
+  color: var(--black-clr);
+  transition: var(--transition);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
+}
+.banner__iconBody:hover .banner__icon{
+  color: var(--white-clr);
+}
+
+/* =============== banner section css end here ================ */
