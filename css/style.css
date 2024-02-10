@@ -90,6 +90,13 @@ body {
   -ms-transition: var(--transition);
   -o-transition: var(--transition);
 }
+.common__sectionHeading {
+  font-family: var(--oswald-font);
+  font-weight: var(--semi-bold-weight);
+  font-size: 38px;
+  color: var(--white-clr);
+  text-transform: uppercase;
+}
 /* ============= common css end here ================ */
 
 /* =============== navBar css start here ================= */
@@ -134,10 +141,42 @@ body {
   -moz-transition: var(--transition);
   -ms-transition: var(--transition);
   -o-transition: var(--transition);
+  /* position: relative;
+  padding: 3px 2px; */
 }
 .nav__item:hover {
   color: var(--primary-clr);
 }
+/* .nav__item::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: calc(100% + 10px);
+  left: 0;
+  top: -5px;
+  border-left: 2px solid var(--primary-clr);
+  border-right: 2px solid var(--primary-clr);
+  transform: scale(1, 0);
+  transition: all 0.3s linear;
+}
+.nav__item::before {
+  position: absolute;
+  content: "";
+  width: calc(100% + 10px);
+  height: 100%;
+  top: 0;
+  left: -5px;
+  border-top: 2px solid var(--primary-clr);
+  border-bottom: 2px solid var(--primary-clr);
+  transform: scale(0, 1);
+  transition: all 0.3s linear;
+}
+.nav__item:hover::after {
+  transform: scale(1, 1);
+}
+.nav__item:hover::before {
+  transform: scale(1, 1);
+} */
 .nav__icon__wrapper {
   display: flex;
   align-items: center;
@@ -254,17 +293,12 @@ body {
   background-color: var(--primary-bg-clr);
   padding: 34px 0 80px 0;
 }
-.about__sectionHeading {
+.about--sectionHeading {
   max-width: 518px;
-  font-family: var(--oswald-font);
-  font-weight: var(--semi-bold-weight);
-  font-size: 38px;
-  color: var(--white-clr);
-  text-transform: uppercase;
   margin-bottom: 64px;
   position: relative;
 }
-.about__sectionHeading::after {
+.about--sectionHeading::after {
   position: absolute;
   content: "";
   height: 3px;
@@ -387,3 +421,77 @@ body {
   font-size: 18px;
 }
 /* =============== about section css end here ================ */
+/* =============== games section css end here ================ */
+#games {
+  padding: 115px 0 90px 0;
+  background-color: var(--secondary-bg-clr);
+}
+.games__wrapper {
+  position: relative;
+}
+.games--sectionHeading {
+  text-align: end;
+  max-width: 464px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.games--sectionHeading::before {
+  position: absolute;
+  content: "";
+  width: 120px;
+  height: 3px;
+  background-color: var(--primary-clr);
+  bottom: 11px;
+  left: 250px;
+}
+.games__sliderWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  column-gap: 20px;
+}
+.games__sliderItem {
+  width: 50%;
+  height: auto;
+  overflow: hidden;
+  object-fit: cover;
+  object-position: center;
+}
+.games__sliderItemImg {
+  width: 100%;
+  height: 100%;
+}
+.games__slideBtnWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: absolute;
+  right: 16px;
+  bottom: 22px;
+}
+.games__sliderBtn {
+  width: 40px;
+  height: 40px;
+  border: 1px solid var(--white-clr);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--white-clr);
+  cursor: pointer;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  transition: var(--transition);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
+}
+.games__sliderBtn:hover {
+  background-color: var(--primary-clr);
+}
+/* =============== games section css end here ================ */
+
