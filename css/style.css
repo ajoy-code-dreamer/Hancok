@@ -20,9 +20,11 @@
   /* === colors === */
   --white-clr: #fff;
   --secondary-text-clr: #dddddd;
+  --third-text-clr: #666666;
   --primary-clr: #ff4655;
   --primary-bg-clr: #121212;
   --secondary-bg-clr: #191919;
+  --third-bg-clr: #212121;
   --black-clr: #000;
   /* === colors === */
   /* === method === */
@@ -103,11 +105,12 @@ body {
 /* =============== navBar css start here ================= */
 #nav {
   width: 100%;
-  background-color: transparent;
+  background-color: var(--secondary-bg-clr);
   padding: 25px 0;
-  position: absolute;
+  position: sticky;
   left: 0;
   top: 0;
+  z-index: 9999;
 }
 .nav__wrapper {
   display: flex;
@@ -386,7 +389,7 @@ body {
 }
 .about__counterItem {
   width: 315px;
-  background-color: #212121;
+  background-color: var(--third-bg-clr);
   text-align: center;
   padding: 26px 0;
   color: var(--white-clr);
@@ -625,11 +628,10 @@ body {
   letter-spacing: 2px;
   padding-bottom: 50px;
 }
-.streaming__matchTeamWrapper{
+.streaming__matchTeamWrapper {
   display: flex;
   flex-direction: column;
   gap: 60px;
-
 }
 .streaming__matchItemWrapper {
   display: flex;
@@ -638,7 +640,7 @@ body {
 .streaming__matchItem {
   width: 426px;
   padding: 10px 5px;
-  background-color: #212121;
+  background-color: var(--third-bg-clr);
   display: flex;
   align-items: center;
   column-gap: 120px;
@@ -655,16 +657,235 @@ body {
   object-fit: cover;
   object-position: center;
 }
-.streaming__matchItem:nth-child(2){
+.streaming__matchItem:nth-child(2) {
   font-family: var(--oswald-font);
   background-color: transparent;
   font-size: 40px;
   justify-content: center;
   width: auto;
 }
-.streaming__matchItem:nth-child(3){
+.streaming__matchItem:nth-child(3) {
   flex-direction: row-reverse;
-  clip-path: polygon(0 0, 100% 0,100% 100%, 13% 100%);
-  
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 13% 100%);
 }
 /* =============== streaming section css end here ================ */
+/* =============== sale section css end here ================ */
+#sale {
+  padding: 90px 0;
+  background-color: var(--secondary-bg-clr);
+}
+.sale__sectionHeading {
+  display: flex;
+  justify-content: end;
+  text-align: end;
+  padding-bottom: 50px;
+}
+.sale--sectionTitle {
+  max-width: 520px;
+  position: relative;
+}
+.sale--sectionTitle::before {
+  position: absolute;
+  content: "";
+  width: 120px;
+  height: 3px;
+  background-color: var(--primary-clr);
+  bottom: 11px;
+  right: 90px;
+}
+.sale__itemWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-bottom: 60px;
+}
+.sale__item {
+  width: 315px;
+  cursor: pointer;
+}
+.sale__itemImage {
+  width: 100%;
+  height: 430px;
+  overflow: hidden;
+  object-fit: cover;
+  object-position: center;
+  position: relative;
+  padding-bottom: 18px;
+}
+.sale__image {
+  width: 100%;
+  height: 100%;
+}
+.sale__addToCart {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid var(--white-clr);
+  color: var(--white-clr);
+  background-color: var(--black-clr);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  transition: var(--transition);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: var(--bold-weight);
+  opacity: 0;
+}
+.sale__item:hover .sale__addToCart {
+  opacity: 1;
+}
+.sale__itemTitle {
+  font-family: var(--barlow-font);
+  font-weight: var(--semi-bold-weight);
+  font-size: 22px;
+  color: var(--white-clr);
+  padding-bottom: 20px;
+}
+.sale__itemName {
+  font-family: var(--oswald-font);
+  font-weight: var(--regular-weight);
+  font-size: 16px;
+  color: var(--third-text-clr);
+  padding-bottom: 20px;
+}
+.sale__itemPrice {
+  font-family: var(--oswald-font);
+  font-weight: var(--regular-weight);
+  font-size: 16px;
+  color: var(--white-clr);
+  display: flex;
+  column-gap: 10px;
+  align-items: center;
+}
+.sale__itemDiscount {
+  background-color: var(--primary-clr);
+  padding: 2px;
+}
+.sale__prePrice {
+  color: var(--third-text-clr);
+}
+.sale__catalog {
+  font-family: var(--barlow-font);
+  font-weight: var(--medium-weight);
+  font-size: 20px;
+  color: var(--white-clr);
+  padding-bottom: 30px;
+}
+.sale__favoritePartWrapper {
+  padding: 45px;
+  background-color: var(--third-bg-clr);
+  display: flex;
+  align-items: center;
+}
+.sale__favoriteContentWrapper {
+  max-width: 710px;
+  padding-right: 134px;
+}
+.sale__favoriteTitle {
+  font-family: var(--oswald-font);
+  font-weight: var(--medium-weight);
+  font-size: 16px;
+  color: var(--primary-clr);
+  padding-bottom: 15px;
+}
+.sale__favoriteHeading {
+  font-family: var(--barlow-font);
+  font-weight: var(--semi-bold-weight);
+  font-size: 38px;
+  color: white;
+  padding-bottom: 16px;
+  text-transform: uppercase;
+}
+.sale__favoriteDetails {
+  font-family: var(--oswald-font);
+  font-weight: var(--semi-bold-weight);
+  font-size: 16px;
+  color: var(--third-text-clr);
+  padding-bottom: 25px;
+}
+.sale--btn {
+  padding: 13px 30px;
+  background-color: var(--primary-bg-clr);
+  color: var(--white-clr);
+}
+.sale--btn:hover {
+  background-color: var(--primary-clr);
+}
+.sale__favoriteItemWrapper {
+  width: 426px;
+  height: 409px;
+  position: relative;
+}
+.favoriteItem--one {
+  width: 254px;
+  height: 370px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+.favoriteItem--two {
+  width: 254px;
+  height: 370px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+.favoriteItem--three {
+  width: 245px;
+  height: 370px;
+  position: absolute;
+  left: 10%;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+.favoriteItem--four {
+  width: 245px;
+  height: 370px;
+  position: absolute;
+  right: 10%;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+.favoriteItem--five{
+  width: 258px;
+  height: 370px;
+  position: absolute;
+  right: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+  -moz-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  -o-transform: translate(-50%,-50%);
+}
+
+/* =============== sale section css end here ================ */
