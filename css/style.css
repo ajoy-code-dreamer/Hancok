@@ -426,7 +426,7 @@ body {
   font-size: 18px;
 }
 /* =============== about section css end here ================ */
-/* =============== games section css end here ================ */
+/* =============== games section css start here ================ */
 #games {
   padding: 115px 0 90px 0;
   background-color: var(--secondary-bg-clr);
@@ -499,7 +499,7 @@ body {
   background-color: var(--primary-clr);
 }
 /* =============== games section css end here ================ */
-/* =============== streaming section css end here ================ */
+/* =============== streaming section css start here ================ */
 #streaming {
   padding: 90px 0;
   background-color: var(--primary-bg-clr);
@@ -669,7 +669,7 @@ body {
   clip-path: polygon(0 0, 100% 0, 100% 100%, 13% 100%);
 }
 /* =============== streaming section css end here ================ */
-/* =============== sale section css end here ================ */
+/* =============== sale section css start here ================ */
 #sale {
   padding: 90px 0;
   background-color: var(--secondary-bg-clr);
@@ -895,3 +895,87 @@ body {
 }
 
 /* =============== sale section css end here ================ */
+/* =============== accessories section css start here ================ */
+#accessories {
+  padding: 90px 0;
+  background-color: var(--primary-bg-clr);
+}
+.accessories--sectionHeading {
+  max-width: 446px;
+  position: relative;
+  margin-bottom: 103px;
+}
+.accessories--sectionHeading::after {
+  position: absolute;
+  content: "";
+  height: 3px;
+  width: 120px;
+  background-color: var(--primary-clr);
+  bottom: 11px;
+  right: 105px;
+}
+.accessories__itemWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.accessories__item {
+  width: 315px;
+  height: 465px;
+  background-color: var(--third-bg-clr);
+  padding: 24px 38px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: var(--transition);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
+}
+.accessories__item:hover{
+  border: 2px solid var(--primary-clr);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.accessories__price {
+  font-family: var(--oswald-font);
+  font-weight: var(--medium-weight);
+  font-size: 40px;
+  color: var(--white-clr);
+  padding-bottom: 7px;
+}
+.accessories__imagesWrapper {
+  max-width: 250px;
+  max-width: 250px;
+  overflow: hidden;
+  object-fit: cover;
+  object-position: center;
+  padding-bottom: 45px;
+}
+.accessories__images {
+  width: 100%;
+  height: 100%;
+}
+.accessories__name {
+  font-family: var(--oswald-font);
+  font-weight: var(--semi-bold-weight);
+  font-size: 25px;
+  color: var(--white-clr);
+  padding-bottom: 25px;
+}
+.accessories__addToCart{
+  font-family: var(--oswald-font);
+  font-weight: var(--semi-bold-weight);
+  font-size: 16px;
+  color: var(--primary-clr);
+  text-transform: uppercase;
+}
+/* =============== accessories section css end here ================ */
