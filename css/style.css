@@ -434,14 +434,18 @@ body {
 .games__wrapper {
   position: relative;
 }
-.games--sectionHeading {
+.games__sectionHeading {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.games--sectionTitle {
   text-align: end;
   max-width: 527px;
-  position: absolute;
-  right: 0;
-  top: 0;
+  position: relative;
 }
-.games--sectionHeading::before {
+.games--sectionTitle::before {
   position: absolute;
   content: "";
   width: 120px;
@@ -936,7 +940,7 @@ body {
   -ms-transition: var(--transition);
   -o-transition: var(--transition);
 }
-.accessories__item:hover{
+.accessories__item:hover {
   border: 2px solid var(--primary-clr);
   border-radius: 10px;
   -webkit-border-radius: 10px;
@@ -971,7 +975,7 @@ body {
   color: var(--white-clr);
   padding-bottom: 25px;
 }
-.accessories__addToCart{
+.accessories__addToCart {
   font-family: var(--oswald-font);
   font-weight: var(--semi-bold-weight);
   font-size: 16px;
@@ -980,21 +984,21 @@ body {
 }
 /* =============== accessories section css end here ================ */
 /* =============== team section css start here ================ */
-#team{
+#team {
   padding: 100px 0;
   background-color: var(--secondary-bg-clr);
 }
-.team__sectionHeading{
+.team__sectionHeading {
   display: flex;
   justify-content: end;
 }
-.team--sectionTitle{
+.team--sectionTitle {
   text-align: end;
   max-width: 550px;
   position: relative;
   margin-bottom: 50px;
 }
-.team--sectionTitle::before{
+.team--sectionTitle::before {
   position: absolute;
   content: "";
   width: 120px;
@@ -1003,7 +1007,7 @@ body {
   bottom: 11px;
   right: 98px;
 }
-.team__itemWrapper{
+.team__itemWrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1011,12 +1015,12 @@ body {
   column-gap: 20px;
   row-gap: 30px;
 }
-.team__item{
+.team__item {
   width: 650px;
   height: 430px;
   cursor: pointer;
 }
-.team__imageWrapper{
+.team__imageWrapper {
   width: 100%;
   height: 100%;
   overflow: hidden;
@@ -1024,7 +1028,7 @@ body {
   object-position: center;
   position: relative;
 }
-.team__image{
+.team__image {
   width: 100%;
   height: 100%;
   filter: grayscale(100%);
@@ -1035,7 +1039,7 @@ body {
   -ms-transition: var(--transition);
   -o-transition: var(--transition);
 }
-.team__overlay{
+.team__overlay {
   padding: 25px 30px;
   position: absolute;
   width: 100%;
@@ -1051,36 +1055,36 @@ body {
   -ms-transition: var(--transition);
   -o-transition: var(--transition);
 }
-.team__item:hover .team__image{
+.team__item:hover .team__image {
   filter: grayscale(0);
   -webkit-filter: grayscale(0);
 }
-.team__item:hover .team__overlay{
+.team__item:hover .team__overlay {
   bottom: 0;
 }
-.team__contentWrapper{
+.team__contentWrapper {
   width: 300px;
 }
-.team__name{
+.team__name {
   font-family: var(--barlow-font);
   font-weight: var(--semi-bold-weight);
   font-size: 30px;
   color: var(--white-clr);
   padding-bottom: 25px;
 }
-.team__details{
+.team__details {
   font-family: var(--oswald-font);
   font-weight: var(--regular-weight);
   font-size: 16px;
   color: var(--white-clr);
   padding-bottom: 20px;
 }
-.team--btn{
+.team--btn {
   font-family: var(--oswald-font);
   font-weight: var(--regular-weight);
   font-size: 16px;
   color: var(--white-clr);
-  background-color:var(--primary-clr);
+  background-color: var(--primary-clr);
   padding: 5px 20px;
   transition: var(--transition);
   -webkit-transition: var(--transition);
@@ -1088,16 +1092,16 @@ body {
   -ms-transition: var(--transition);
   -o-transition: var(--transition);
 }
-.team--btn:hover{
+.team--btn:hover {
   color: var(--primary-clr);
   background-color: var(--white-clr);
 }
-.team__socialIconWrapper{
+.team__socialIconWrapper {
   display: flex;
   column-gap: 20px;
   align-items: end;
 }
-.team__socialIcon{
+.team__socialIcon {
   width: 35px;
   height: 35px;
   display: flex;
@@ -1116,7 +1120,7 @@ body {
   -ms-transition: var(--transition);
   -o-transition: var(--transition);
 }
-.team__socialIcon:hover{
+.team__socialIcon:hover {
   color: var(--primary-clr);
   background-color: var(--white-clr);
 }
