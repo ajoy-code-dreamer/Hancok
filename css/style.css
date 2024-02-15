@@ -1016,8 +1016,8 @@ body {
   row-gap: 30px;
 }
 .team__item {
-  width: 650px;
-  height: 430px;
+  max-width: 650px;
+  max-height: 430px;
   cursor: pointer;
 }
 .team__imageWrapper {
@@ -1126,3 +1126,93 @@ body {
 }
 
 /* =============== team section css end here ================ */
+/* =============== faq section css start here ================ */
+#faq {
+  padding: 55px 0 200px 0;
+  background-color: var(--primary-bg-clr);
+}
+.faq--sectionHeading {
+  max-width: 520px;
+  position: relative;
+  margin-bottom: 92px;
+}
+.faq--sectionHeading::after {
+  position: absolute;
+  content: "";
+  height: 3px;
+  width: 120px;
+  background-color: var(--primary-clr);
+  bottom: 11px;
+  right: 5px;
+}
+.faq__itemWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  row-gap: 150px;
+  position: relative;
+}
+.faq__itemWrapper::after{
+  position: absolute;
+  content: '';
+  height: 1px;
+  width: 100%;
+  background-color: var(--third-text-clr);
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+.faq__itemWrapper::before{
+  position: absolute;
+  content: '';
+  width: 1px;
+  height: 100%;
+  background-color: var(--third-text-clr);
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+.faq__itemContentWrapper {
+  display: flex;
+  gap: 42px;
+  width: 540px;
+  color: var(--white-clr);
+}
+.faq__serial {
+  width: 70px;
+  height: 70px;
+  background-color: var(--primary-clr);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--barlow-font);
+  font-weight: var(--semi-bold-weight);
+  font-size: 38px;
+}
+.faq__details{
+  width: 427px;
+}
+.faq__question{
+  font-family: var(--barlow-font);
+  font-weight: var(--semi-bold-weight);
+  font-size: 22px;
+  color: var(--primary-clr);
+  padding-bottom: 11px;
+  text-transform: uppercase;
+}
+.faq__answer{
+  font-family: var(--oswald-font);
+  font-weight: var(--regular-weight);
+  font-size: 16px;
+  color: var(--third-text-clr);
+}
+/* =============== faq section css end here ================ */
