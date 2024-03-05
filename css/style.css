@@ -442,7 +442,7 @@ body {
   background-color: var(--primary-clr);
 }
 .about__counterWrapper {
-  display: flex;
+  display: flex !important;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
@@ -699,10 +699,27 @@ body {
   display: flex;
   flex-direction: column;
   gap: 60px;
+  position: relative;
+}
+.streaming__matchTeamWrapper::after{
+  position: absolute;
+  content: '';
+  width: 200px;
+  height: 2px;
+  background-color: var(--primary-clr);
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+  -moz-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  -o-transform: translate(-50%,-50%);
 }
 .streaming__matchItemWrapper {
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
+  row-gap: 20px;
 }
 .streaming__matchItem {
   width: 426px;
