@@ -120,17 +120,20 @@ $(function(){
 
 // ========== script js operation ===========
 // ===== navbar js =====
-// all selector 
+// === selector ===
 const navMenu = document.querySelector('.nav__menu__wrapper')
 const collapseClose = document.querySelector('.collapse__menuIcon i')
-// all selector 
+// === selector ===
 
-// menu hide show 
+// ==== nav hide show ====
 
 collapseClose.addEventListener('click',(e)=>{
   navMenu.classList.toggle('nav__active')
   collapseClose.classList.toggle('fa-xmark')
 })
+
+// ==== nav hide show ====
+
 // ===== navbar js =====
 
 // ========== script js operation ===========

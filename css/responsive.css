@@ -2,7 +2,6 @@
 /* ========================= device (xs 0 > 576) ========================= */
 @media (max-width: 575.98px) {
   /* === navbar === */
-
   .nav__wrapper {
     padding: 0 10px;
     justify-content: space-between;
@@ -38,6 +37,26 @@
     display: block;
   }
   /* === navbar === */
+  /* === banner === */
+  #banner {
+    padding: 50px 0 50px 0;
+  }
+  .banner__wrapper {
+    padding: 20px;
+  }
+  .banner--btn {
+    margin-bottom: 30px;
+  }
+  .banner__heading {
+    font-size: 40px;
+  }
+  .banner__heading::after {
+    position: unset;
+  }
+  .banner__details {
+    padding-bottom: 15px;
+  }
+  /* === banner === */
 }
 /* ========================= device (xs 0 > 576) ========================= */
 
@@ -72,13 +91,26 @@
     display: block;
   }
   /* === navbar === */
+  /* === banner === */
+  #banner {
+    padding: 50px 0 50px 0;
+  }
+  .banner__wrapper {
+    padding: 20px;
+  }
+  .banner--btn {
+    margin-bottom: 30px;
+  }
+  .banner__details {
+    padding-bottom: 15px;
+  }
+  /* === banner === */
 }
 /* ========================= device (sm 576 > 768) ========================= */
 
 /* ========================= device (md 768 > 992) ========================= */
 @media (min-width: 768px) and (max-width: 991.98px) {
   /* === navbar === */
-
   .nav__wrapper {
     padding: 0 20px;
     justify-content: space-between;
@@ -97,7 +129,7 @@
     -moz-transform: scale(0);
     -ms-transform: scale(0);
     -o-transform: scale(0);
-}
+  }
   .nav__menu {
     flex-direction: column;
     row-gap: 10px;
@@ -107,16 +139,68 @@
     display: block;
   }
   /* === navbar === */
+  /* === banner === */
+  #banner {
+    padding: 50px 0 50px 0;
+  }
+  .banner__wrapper {
+    padding: 20px;
+  }
+  .banner--btn {
+    margin-bottom: 30px;
+  }
+  .banner__details {
+    padding-bottom: 15px;
+  }
+  /* === banner === */
 }
 /* ========================= device (md 768 > 992) ========================= */
 
 /* ========================= device (lg 992 > 1200) ========================= */
 @media (min-width: 992px) and (max-width: 1199.98px) {
+  /* === navbar === */
+  .nav__wrapper {
+    padding: 0 20px;
+  }
+  /* === navbar === */
+  /* === banner === */
+  #banner {
+    padding: 50px 0 100px 0;
+  }
+  .banner__wrapper {
+    padding: 30px;
+  }
+  .banner--btn {
+    margin-bottom: 70px;
+  }
+  .banner__details {
+    padding-bottom: 30px;
+  }
+  /* === banner === */
 }
 /* ========================= device (lg 992 > 1200) ========================= */
 
 /* ========================= device (xl 1200 > 1400) ========================= */
 @media (min-width: 1200px) and (max-width: 1400px) {
+  /* === navbar === */
+  .nav__wrapper {
+    padding: 0 20px;
+  }
+  /* === navbar === */
+  /* === banner === */
+  #banner {
+    padding: 50px 0 100px 0;
+  }
+  .banner__wrapper {
+    padding: 30px;
+  }
+  .banner--btn {
+    margin-bottom: 70px;
+  }
+  .banner__details {
+    padding-bottom: 30px;
+  }
+  /* === banner === */
 }
 /* ========================= device (xl 1200 > 1400) ========================= */
 /* ========================= device (xxl 1400 >>) ========================= */

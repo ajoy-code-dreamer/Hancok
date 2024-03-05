@@ -39,6 +39,7 @@
   padding: 0;
   outline: none;
   box-sizing: border-box;
+  /* border: 1px solid var(--primary-clr); */
 }
 ul,
 ol,
@@ -68,6 +69,7 @@ img {
 }
 body {
   position: relative;
+  overflow-x: hidden;
 }
 .container {
   max-width: 1320px;
@@ -117,7 +119,6 @@ body {
   align-items: center;
   column-gap: 60px;
   position: relative;
-
 }
 .nav__logo {
   width: 124px;
@@ -152,7 +153,6 @@ body {
 .nav__item:hover {
   /* color: var(--primary-clr); */
   box-shadow: -1px 0px 20px 5px rgba(255, 255, 255, 0.4);
-
 }
 .nav__item::after {
   position: absolute;
@@ -228,13 +228,13 @@ body {
   font-size: var(--pera-font-size);
   padding-left: 7px;
 }
-.collapse__menuIcon{
+.collapse__menuIcon {
   width: 20px;
   height: 20px;
   color: var(--white-clr);
   display: none;
 }
-.collapse__menuIcon i{
+.collapse__menuIcon i {
   font-size: 20px;
   transition: var(--transition);
   -webkit-transition: var(--transition);
@@ -242,7 +242,7 @@ body {
   -ms-transition: var(--transition);
   -o-transition: var(--transition);
 }
-.nav__menu__wrapper{
+.nav__menu__wrapper {
   transition: var(--transition);
   -webkit-transition: var(--transition);
   -moz-transition: var(--transition);
@@ -267,20 +267,20 @@ body {
 /* =============== navBar css end here ================ */
 /* =============== banner section css start here ================ */
 #banner {
-  max-width: 100%;
+  width: 100%;
   padding: 337px 0 103px 0;
   background-image: url(../images/banner_bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
+
 .banner__content {
   font-family: var(--oswald-font);
   color: var(--white-clr);
 }
 .banner__heading_top {
   font-weight: var(--regular-weight);
-
   font-size: 27px;
 }
 .banner__heading {
@@ -962,7 +962,7 @@ body {
   -o-transform: translate(-0%);
   z-index: 504;
 }
-.sale__favoriteItem:hover{
+.sale__favoriteItem:hover {
   z-index: 55555;
   transform: translateX(-50%);
   -webkit-transform: translateX(-50%);
