@@ -1,39 +1,128 @@
 /* ======== responsive css ======== */
 /* ========================= device (xs 0 > 576) ========================= */
 @media (max-width: 575.98px) {
-	
+  /* === navbar === */
+
+  .nav__wrapper {
+    padding: 0 10px;
+    justify-content: space-between;
+    column-gap: 20px;
+  }
+  .nav__icon__wrapper {
+    column-gap: 5px;
+  }
+  .nav__icon {
+    font-size: 14px;
+  }
+  .nav__menu__wrapper {
+    padding: 20px 0;
+    width: 100vw;
+    height: 100vh;
+    background: var(--primary-bg-clr);
+    position: absolute;
+    top: 65px;
+    left: 0;
+    opacity: 0;
+    transform: scale(0);
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+  }
+  .nav__menu {
+    flex-direction: column;
+    row-gap: 10px;
+    text-align: center;
+  }
+  .collapse__menuIcon {
+    display: block;
+  }
+  /* === navbar === */
 }
 /* ========================= device (xs 0 > 576) ========================= */
 
 /* ========================= device (sm 576 > 768) ========================= */
 @media (min-width: 576px) and (max-width: 767.98px) {
-	
+  /* === navbar === */
+  .nav__wrapper {
+    padding: 0 20px;
+    justify-content: space-between;
+  }
+  .nav__menu__wrapper {
+    padding: 20px 0;
+    width: 100vw;
+    height: 100vh;
+    background: var(--primary-bg-clr);
+    position: absolute;
+    top: 65px;
+    left: 0;
+    opacity: 0;
+    transform: scale(0);
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+  }
+  .nav__menu {
+    flex-direction: column;
+    row-gap: 10px;
+    text-align: center;
+  }
+  .collapse__menuIcon {
+    display: block;
+  }
+  /* === navbar === */
 }
 /* ========================= device (sm 576 > 768) ========================= */
 
 /* ========================= device (md 768 > 992) ========================= */
 @media (min-width: 768px) and (max-width: 991.98px) {
-	
+  /* === navbar === */
+
+  .nav__wrapper {
+    padding: 0 20px;
+    justify-content: space-between;
+  }
+  .nav__menu__wrapper {
+    padding: 20px 0;
+    width: 100vw;
+    height: 100vh;
+    background: var(--primary-bg-clr);
+    position: absolute;
+    top: 65px;
+    left: 0;
+    opacity: 0;
+    transform: scale(0);
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+}
+  .nav__menu {
+    flex-direction: column;
+    row-gap: 10px;
+    text-align: center;
+  }
+  .collapse__menuIcon {
+    display: block;
+  }
+  /* === navbar === */
 }
 /* ========================= device (md 768 > 992) ========================= */
 
 /* ========================= device (lg 992 > 1200) ========================= */
 @media (min-width: 992px) and (max-width: 1199.98px) {
-	
 }
 /* ========================= device (lg 992 > 1200) ========================= */
 
 /* ========================= device (xl 1200 > 1400) ========================= */
 @media (min-width: 1200px) and (max-width: 1400px) {
-	
 }
 /* ========================= device (xl 1200 > 1400) ========================= */
 /* ========================= device (xxl 1400 >>) ========================= */
 @media (min-width: 1400px) {
-
 }
 /* ========================= device (xxl 1400 >>) ========================= */
 /* ======== responsive css ======== */
-
 
 /* ===== design by AJOY SAHA ===== */

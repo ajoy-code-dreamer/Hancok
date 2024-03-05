@@ -115,11 +115,13 @@ body {
 .nav__wrapper {
   display: flex;
   align-items: center;
-  justify-content: center;
+  column-gap: 60px;
+  position: relative;
+
 }
 .nav__logo {
-  max-width: 124px;
-  max-height: 42px;
+  width: 124px;
+  height: 42px;
   overflow: hidden;
   object-fit: cover;
   object-position: center;
@@ -133,7 +135,6 @@ body {
   justify-content: center;
   align-items: center;
   column-gap: 30px;
-  margin: 0 454px 0 60px;
 }
 .nav__item {
   font-family: var(--oswald-font);
@@ -145,46 +146,68 @@ body {
   -moz-transition: var(--transition);
   -ms-transition: var(--transition);
   -o-transition: var(--transition);
-  /* position: relative;
-  padding: 3px 2px; */
+  position: relative;
+  padding: 0px 5px 0px 8px;
 }
 .nav__item:hover {
-  color: var(--primary-clr);
+  /* color: var(--primary-clr); */
+  box-shadow: -1px 0px 20px 5px rgba(255, 255, 255, 0.4);
+
 }
-/* .nav__item::after {
+.nav__item::after {
   position: absolute;
   content: "";
   width: 100%;
-  height: calc(100% + 10px);
+  height: calc(100% + 15px);
   left: 0;
-  top: -5px;
+  top: -6px;
   border-left: 2px solid var(--primary-clr);
   border-right: 2px solid var(--primary-clr);
   transform: scale(1, 0);
-  transition: all 0.3s linear;
+  -webkit-transform: scale(1, 0);
+  -moz-transform: scale(1, 0);
+  -ms-transform: scale(1, 0);
+  -o-transform: scale(1, 0);
+  transition: var(--transition);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
+  /* box-shadow: -1px 0px 20px 5px rgba(255, 70, 86, 0.3); */
 }
 .nav__item::before {
   position: absolute;
   content: "";
-  width: calc(100% + 10px);
+  width: calc(100% + 15px);
   height: 100%;
   top: 0;
-  left: -5px;
+  left: -6px;
   border-top: 2px solid var(--primary-clr);
   border-bottom: 2px solid var(--primary-clr);
   transform: scale(0, 1);
-  transition: all 0.3s linear;
+  -webkit-transform: scale(0, 1);
+  -moz-transform: scale(0, 1);
+  -ms-transform: scale(0, 1);
+  -o-transform: scale(0, 1);
+  transition: var(--transition);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
+  /* box-shadow: -1px 0px 20px 5px rgba(255, 70, 86, 0.3); */
 }
 .nav__item:hover::after {
   transform: scale(1, 1);
 }
 .nav__item:hover::before {
   transform: scale(1, 1);
-} */
+}
 .nav__icon__wrapper {
   display: flex;
   align-items: center;
   column-gap: 25px;
+  justify-self: flex-end;
+  margin-left: auto;
 }
 .nav__icon {
   font-family: var(--oswald-font);
@@ -204,6 +227,41 @@ body {
 .nav--singIN {
   font-size: var(--pera-font-size);
   padding-left: 7px;
+}
+.collapse__menuIcon{
+  width: 20px;
+  height: 20px;
+  color: var(--white-clr);
+  display: none;
+}
+.collapse__menuIcon i{
+  font-size: 20px;
+  transition: var(--transition);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
+}
+.nav__menu__wrapper{
+  transition: var(--transition);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
+}
+.nav__menu__wrapper.nav__active {
+  transform: scale(1);
+  opacity: 1;
+  transition: var(--transition);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform-origin: bottom;
 }
 
 /* =============== navBar css end here ================ */
@@ -851,6 +909,11 @@ body {
   -ms-transform: translateX(-50%);
   -o-transform: translateX(-50%);
   z-index: 505;
+  transition: var(--transition);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
 }
 .sale__favoriteItem:nth-child(4) {
   left: 0;
@@ -898,6 +961,16 @@ body {
   -ms-transform: translate(-0%);
   -o-transform: translate(-0%);
   z-index: 504;
+}
+.sale__favoriteItem:hover{
+  z-index: 55555;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  top: 0;
+  left: 50%;
 }
 
 /* =============== sale section css end here ================ */
