@@ -66,7 +66,7 @@
   .about__wrapper {
     padding: 0 20px;
   }
-  .common__sectionHeading.about--sectionHeading {
+  .common__sectionHeading {
     font-size: 30px;
     letter-spacing: 2px;
   }
@@ -85,8 +85,32 @@
   .about__counterWrapper {
     justify-content: center;
   }
-
   /* === about === */
+  /* === games === */
+  .games__wrapper {
+    padding: 0 20px;
+  }
+  .games__sectionHeading {
+    top: -80px;
+    right: 20px;
+  }
+  .games--sectionTitle::before {
+    position: unset;
+  }
+  .games__slideBtnWrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    bottom: -60px;
+    right: 40px;
+  }
+  .games__sliderArrowRight,
+  .games__sliderArrowLeft {
+    width: 30px;
+    height: 30px;
+  }
+
+  /* === games === */
 }
 /* ========================= device (xs 0 > 576) ========================= */
 
@@ -169,6 +193,25 @@
     right: 85px;
   }
   /* === about === */
+  /* === games === */
+  .games__wrapper {
+    padding: 0 20px;
+  }
+  .games__sectionHeading {
+    top: -80px;
+    right: 20px;
+  }
+
+  .games__slideBtnWrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    position: absolute;
+    bottom: -60px;
+    right: 40px;
+  }
+
+  /* === games === */
 }
 /* ========================= device (sm 576 > 768) ========================= */
 
@@ -241,6 +284,23 @@
     right: 85px;
   }
   /* === about === */
+  /* === games === */
+  .games__wrapper {
+    padding: 0 40px;
+  }
+  .games__sectionHeading {
+    top: -60px;
+    right: 40px;
+  }
+  .games__slideBtnWrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    position: absolute;
+    bottom: -60px;
+    right: 40px;
+  }
+  /* === games === */
 }
 /* ========================= device (md 768 > 992) ========================= */
 
@@ -271,7 +331,7 @@
   }
   .about__imagePart {
     padding-right: unset;
-}
+  }
   .about__top {
     justify-content: center;
   }
@@ -280,6 +340,19 @@
     gap: 40px;
   }
   /* === about === */
+  /* === games === */
+  .games__wrapper {
+    padding: 0 40px;
+  }
+  .games__sectionHeading {
+    top: -60px;
+    right: 40px;
+  }
+  .games__slideBtnWrapper {
+    right: 30px;
+    bottom: 15px;
+  }
+  /* === games === */
 }
 /* ========================= device (lg 992 > 1200) ========================= */
 
@@ -316,6 +389,18 @@
     gap: 40px;
   }
   /* === about === */
+  /* === games === */
+  .games__wrapper {
+    padding: 0 40px;
+  }
+  .games__sectionHeading {
+    right: 40px;
+  }
+  .games__slideBtnWrapper {
+    right: 30px;
+    bottom: 15px;
+  }
+  /* === games === */
 }
 /* ========================= device (xl 1200 > 1400) ========================= */
 /* ========================= device (xxl 1400 >>) ========================= */
