@@ -455,13 +455,14 @@ body {
   right: 130px;
 }
 .games__sliderWrapper {
-  display: flex;
+  width: 100%;
+  display: flex !important;
   justify-content: space-between;
   align-items: end;
   column-gap: 20px;
 }
 .games__sliderItem {
-  width: 50%;
+  max-width: 651px;
   height: auto;
   overflow: hidden;
   object-fit: cover;
@@ -479,7 +480,8 @@ body {
   right: 16px;
   bottom: 22px;
 }
-.games__sliderBtn {
+.games__sliderArrowRight,
+.games__sliderArrowLeft {
   width: 40px;
   height: 40px;
   border: 1px solid var(--white-clr);
@@ -523,7 +525,7 @@ body {
   right: 175px;
 }
 .streaming__videoWrapper {
-  display: flex;
+  display: flex !important;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
@@ -698,14 +700,14 @@ body {
   right: 90px;
 }
 .sale__itemWrapper {
-  display: flex;
+  display: flex !important;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
   padding-bottom: 60px;
 }
 .sale__item {
-  width: 315px;
+  max-width: 315px;
   cursor: pointer;
 }
 .sale__itemImage {
@@ -919,17 +921,17 @@ body {
   right: 105px;
 }
 .accessories__itemWrapper {
-  display: flex;
+  display: flex !important;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
 }
 .accessories__item {
-  width: 315px;
-  height: 465px;
+  max-width: 315px;
+  max-height: 465px;
   background-color: var(--third-bg-clr);
   padding: 24px 38px;
-  display: flex;
+  display: flex !important;
   flex-direction: column;
   align-items: center;
   cursor: pointer;

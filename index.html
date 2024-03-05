@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Ajoy Saha" />
     <title>Hancok</title>
     <link rel="icon" href="./images/logo.png" />
     <link
@@ -12,7 +13,11 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- ===== css link ===== -->
+    <link rel="stylesheet" href="./css/slick.css" />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
+    <!-- ===== css link ===== -->
   </head>
   <body>
     <!-- ============== navBar start here ================== -->
@@ -223,33 +228,79 @@
               POPULAR GAMES AROUND THE WORLD
             </h2>
           </div>
-          <div class="games__sliderWrapper">
-            <div class="games__sliderItem">
-              <picture>
-                <img
-                  class="games__sliderItemImg"
-                  src="./images/games_image-1.png"
-                  alt="image"
-                  title="image"
-                />
-              </picture>
+          <div class="games__slider">
+            <div class="games__sliderWrapper">
+              <div class="games__sliderItem">
+                <picture>
+                  <img
+                    class="games__sliderItemImg"
+                    src="./images/games_image-1.png"
+                    alt="image"
+                    title="image"
+                  />
+                </picture>
+              </div>
+              <div class="games__sliderItem">
+                <picture>
+                  <img
+                    class="games__sliderItemImg"
+                    src="./images/games_image-2.png"
+                    alt="image"
+                    title="image"
+                  />
+                </picture>
+              </div>
             </div>
-            <div class="games__sliderItem">
-              <picture>
-                <img
-                  class="games__sliderItemImg"
-                  src="./images/games_image-2.png"
-                  alt="image"
-                  title="image"
-                />
-              </picture>
+            <div class="games__sliderWrapper">
+              <div class="games__sliderItem">
+                <picture>
+                  <img
+                    class="games__sliderItemImg"
+                    src="./images/games_image-1.png"
+                    alt="image"
+                    title="image"
+                  />
+                </picture>
+              </div>
+              <div class="games__sliderItem">
+                <picture>
+                  <img
+                    class="games__sliderItemImg"
+                    src="./images/games_image-2.png"
+                    alt="image"
+                    title="image"
+                  />
+                </picture>
+              </div>
+            </div>
+            <div class="games__sliderWrapper">
+              <div class="games__sliderItem">
+                <picture>
+                  <img
+                    class="games__sliderItemImg"
+                    src="./images/games_image-1.png"
+                    alt="image"
+                    title="image"
+                  />
+                </picture>
+              </div>
+              <div class="games__sliderItem">
+                <picture>
+                  <img
+                    class="games__sliderItemImg"
+                    src="./images/games_image-2.png"
+                    alt="image"
+                    title="image"
+                  />
+                </picture>
+              </div>
             </div>
           </div>
           <div class="games__slideBtnWrapper">
-            <div class="games__sliderBtn Left">
+            <div class="games__sliderArrowLeft">
               <i class="fa-solid fa-angle-left"></i>
             </div>
-            <div class="games__sliderBtn Right">
+            <div class="games__sliderArrowRight">
               <i class="fa-solid fa-angle-right"></i>
             </div>
           </div>
@@ -266,6 +317,82 @@
             LIVE STREAMIN VIDEO BY HANCOK
           </h2>
           <div class="streaming__videoWrapper">
+            <div class="streaming__item">
+              <picture>
+                <img
+                  class="streaming__itemImage"
+                  src="./images/steaming_img-1.png"
+                  alt="images"
+                  title="video"
+                />
+              </picture>
+              <div class="streaming__itemOverlay">
+                <a class="streaming__palyIcon" href="#"
+                  ><i class="fa-solid fa-play"></i
+                ></a>
+                <div class="streaming__overlayContent">
+                  <div class="steaming__overlayTitle">
+                    <h4 class="steaming__overlayTitleHeading">
+                      HORIZON ZERO | DAWN
+                    </h4>
+                    <p class="steaming__overlayTitleName">Guerrilla Games</p>
+                  </div>
+                  <div class="steaming__live">
+                    <p class="streaming__liveText">LIVE</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="streaming__item">
+              <picture>
+                <img
+                  class="streaming__itemImage"
+                  src="./images/steaming_img-2.png"
+                  alt="images"
+                  title="video"
+                />
+              </picture>
+              <div class="streaming__itemOverlay">
+                <a class="streaming__palyIcon" href="#"
+                  ><i class="fa-solid fa-play"></i
+                ></a>
+                <div class="streaming__overlayContent">
+                  <div class="steaming__overlayTitle">
+                    <h4 class="steaming__overlayTitleHeading">
+                      LEAGUE OF | LEGENDS
+                    </h4>
+                    <p class="steaming__overlayTitleName">Riot Games</p>
+                  </div>
+                  <div class="steaming__live">
+                    <p class="streaming__liveText">LIVE</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="streaming__item">
+              <picture>
+                <img
+                  class="streaming__itemImage"
+                  src="./images/steaming_img-3.png"
+                  alt="images"
+                  title="video"
+                />
+              </picture>
+              <div class="streaming__itemOverlay">
+                <a class="streaming__palyIcon" href="#"
+                  ><i class="fa-solid fa-play"></i
+                ></a>
+                <div class="streaming__overlayContent">
+                  <div class="steaming__overlayTitle">
+                    <h4 class="steaming__overlayTitleHeading">PALADINS</h4>
+                    <p class="steaming__overlayTitleName">Hi Rez Studios</p>
+                  </div>
+                  <div class="steaming__live">
+                    <p class="streaming__liveText">LIVE</p>
+                  </div>
+                </div>
+              </div>
+            </div>
             <div class="streaming__item">
               <picture>
                 <img
@@ -527,6 +654,54 @@
                 </p>
               </div>
             </div>
+            <div class="sale__item">
+              <div class="sale__itemImage">
+                <picture>
+                  <img
+                    class="sale__image"
+                    src="./images/sale_image-2.png"
+                    alt="./images/sale_image-2.png"
+                    title="saleImage"
+                  />
+                </picture>
+                <a class="sale__addToCart" href="#"
+                  ><i class="fa-solid fa-plus"></i
+                ></a>
+              </div>
+              <div class="sale__itemContent">
+                <h5 class="sale__itemTitle">Disciples: Liberation</h5>
+                <h6 class="sale__itemName">Frima Studio</h6>
+                <p class="sale__itemPrice">
+                  <span class="sale__itemDiscount">-40%</span>
+                  <del class="sale__prePrice">$19.99</del>
+                  $7.99
+                </p>
+              </div>
+            </div>
+            <div class="sale__item">
+              <div class="sale__itemImage">
+                <picture>
+                  <img
+                    class="sale__image"
+                    src="./images/sale_image-3.png"
+                    alt="./images/sale_image-3.png"
+                    title="saleImage"
+                  />
+                </picture>
+                <a class="sale__addToCart" href="#"
+                  ><i class="fa-solid fa-plus"></i
+                ></a>
+              </div>
+              <div class="sale__itemContent">
+                <h5 class="sale__itemTitle">Horizon Zero Dawn™ Complete...</h5>
+                <h6 class="sale__itemName">Guerrilla Games</h6>
+                <p class="sale__itemPrice">
+                  <span class="sale__itemDiscount">-40%</span>
+                  <del class="sale__prePrice">$19.99</del>
+                  $7.99
+                </p>
+              </div>
+            </div>
           </div>
           <h4 class="sale__catalog">Hancok Games Catalog</h4>
           <div class="sale__favoritePartWrapper">
@@ -666,6 +841,36 @@
                 </picture>
               </div>
               <h3 class="accessories__name">Gaming Controller</h3>
+              <a href="#" class="accessories__addToCart">Add To Cart</a>
+            </div>
+            <div class="accessories__item">
+              <h3 class="accessories__price">$95</h3>
+              <div class="accessories__imagesWrapper">
+                <picture>
+                  <img
+                    class="accessories__images"
+                    src="./images/accessories_img-2.png"
+                    alt="./images/accessories_img-2.png"
+                    title="accessories__image"
+                  />
+                </picture>
+              </div>
+              <h3 class="accessories__name">Gaming Keyboard</h3>
+              <a href="#" class="accessories__addToCart">Add To Cart</a>
+            </div>
+            <div class="accessories__item">
+              <h3 class="accessories__price">$95</h3>
+              <div class="accessories__imagesWrapper">
+                <picture>
+                  <img
+                    class="accessories__images"
+                    src="./images/accessories_img-3.png"
+                    alt="./images/accessories_img-3.png"
+                    title="accessories__image"
+                  />
+                </picture>
+              </div>
+              <h3 class="accessories__name">Gaming Monitor</h3>
               <a href="#" class="accessories__addToCart">Add To Cart</a>
             </div>
           </div>
@@ -1048,6 +1253,7 @@
     ></script>
     <script src="./js/waypoints.min.js"></script>
     <script src="./js/counterup.min.js"></script>
+    <script src="./js/slick.min.js"></script>
     <script src="./js/script.js"></script>
     <!-- ====== js link ===== -->
   </body>
