@@ -372,6 +372,8 @@ body {
 }
 .about__top {
   display: flex;
+  flex-wrap: wrap;
+  row-gap: 30px;
   padding-bottom: 50px;
 }
 .about__imagePart {
@@ -444,6 +446,7 @@ body {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  row-gap: 20px;
 }
 .about__counterItem {
   width: 315px;
