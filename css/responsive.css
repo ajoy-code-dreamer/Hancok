@@ -103,7 +103,8 @@
     flex-direction: row;
     gap: 10px;
     bottom: -60px;
-    right: 40px;
+    right: unset;
+    left: 40px;
   }
   .games__sliderArrowRight,
   .games__sliderArrowLeft {
@@ -163,6 +164,21 @@
     height: 85px;
   }
   /* === steaming === */
+  /* === sale === */
+  #sale {
+    padding: 50px 0;
+  }
+  .sale__sectionWrapper {
+    padding: 0 20px;
+  }
+  .sale--sectionTitle::before {
+    position: unset;
+  }
+  .sale__item {
+    max-width: 160px;
+  }
+
+  /* === sale === */
 }
 /* ========================= device (xs 0 > 576) ========================= */
 
@@ -261,7 +277,8 @@
     gap: 10px;
     position: absolute;
     bottom: -60px;
-    right: 40px;
+    right: unset;
+    left: 40px;
   }
   /* === games === */
   /* === steaming === */
@@ -297,6 +314,17 @@
     align-items: center;
   }
   /* === steaming === */
+  /* === sale === */
+  #sale {
+    padding: 50px 0;
+  }
+  .sale__sectionWrapper {
+    padding: 0 20px;
+  }
+  .sale__item {
+    max-width: 270px;
+  }
+  /* === sale === */
 }
 /* ========================= device (sm 576 > 768) ========================= */
 
@@ -384,7 +412,8 @@
     gap: 10px;
     position: absolute;
     bottom: -60px;
-    right: 40px;
+    right: unset;
+    left: 40px;
   }
   /* === games === */
   /* === steaming === */
@@ -420,6 +449,14 @@
     align-items: center;
   }
   /* === steaming === */
+  /* === sale === */
+  #sale {
+    padding: 50px 0;
+  }
+  .sale__sectionWrapper {
+    padding: 0 40px;
+  }
+  /* === sale === */
 }
 /* ========================= device (md 768 > 992) ========================= */
 
@@ -483,8 +520,15 @@
   .streaming__item {
     max-width: 300px;
   }
-
   /* === steaming === */
+  /* === sale === */
+  #sale {
+    padding: 50px 0;
+  }
+  .sale__sectionWrapper {
+    padding: 0 40px;
+  }
+  /* === sale === */
 }
 /* ========================= device (lg 992 > 1200) ========================= */
 
@@ -541,6 +585,14 @@
     max-width: 380px;
   }
   /* === steaming === */
+  /* === sale === */
+  #sale {
+    padding: 50px 0;
+  }
+  .sale__sectionWrapper {
+    padding: 0 40px;
+  }
+  /* === sale === */
 }
 /* ========================= device (xl 1200 > 1400) ========================= */
 /* ========================= device (xxl 1400 >>) ========================= */
