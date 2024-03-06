@@ -177,6 +177,16 @@
   .sale__item {
     max-width: 160px;
   }
+  .sale__favoritePartWrapper {
+    justify-content: center;
+    row-gap: 30px;
+  }
+  .sale__favoritePartWrapper {
+    padding: 20px;
+  }
+  .sale__favoriteContentWrapper {
+    padding-right: unset;
+  }
 
   /* === sale === */
 }
@@ -324,6 +334,16 @@
   .sale__item {
     max-width: 270px;
   }
+  .sale__favoritePartWrapper {
+    justify-content: center;
+    row-gap: 40px;
+  }
+  .sale__favoritePartWrapper {
+    padding: 30px;
+  }
+  .sale__favoriteContentWrapper {
+    padding-right: unset;
+  }
   /* === sale === */
 }
 /* ========================= device (sm 576 > 768) ========================= */
@@ -456,6 +476,16 @@
   .sale__sectionWrapper {
     padding: 0 40px;
   }
+  .sale__favoritePartWrapper {
+    justify-content: center;
+    row-gap: 40px;
+  }
+  .sale__favoritePartWrapper {
+    padding: 30px;
+  }
+  .sale__favoriteContentWrapper {
+    padding-right: unset;
+  }
   /* === sale === */
 }
 /* ========================= device (md 768 > 992) ========================= */
@@ -528,6 +558,14 @@
   .sale__sectionWrapper {
     padding: 0 40px;
   }
+  .sale__favoritePartWrapper {
+    justify-content: center;
+    row-gap: 40px;
+  }
+
+  .sale__favoriteContentWrapper {
+    padding-right: unset;
+  }
   /* === sale === */
 }
 /* ========================= device (lg 992 > 1200) ========================= */
@@ -591,6 +629,9 @@
   }
   .sale__sectionWrapper {
     padding: 0 40px;
+  }
+  .sale__favoriteContentWrapper {
+    max-width: 620px;
   }
   /* === sale === */
 }

@@ -871,6 +871,7 @@ body {
   background-color: var(--third-bg-clr);
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
 }
 .sale__favoriteContentWrapper {
   max-width: 710px;
