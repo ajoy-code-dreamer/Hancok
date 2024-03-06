@@ -269,7 +269,7 @@ body {
 #banner {
   width: 100%;
   padding: 337px 0 103px 0;
-  background-image: url(../images/banner_bg.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.0),rgba(0, 0, 0, 0.0)), url(../images/banner_bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
