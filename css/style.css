@@ -935,6 +935,7 @@ body {
   -moz-transition: var(--transition);
   -ms-transition: var(--transition);
   -o-transition: var(--transition);
+  cursor: pointer;
 }
 .sale__favoriteItem:nth-child(4) {
   left: 0;

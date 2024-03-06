@@ -187,8 +187,24 @@
   .sale__favoriteContentWrapper {
     padding-right: unset;
   }
-
   /* === sale === */
+  /* === accessories === */
+  #accessories {
+    padding: 50px 0;
+  }
+  .accessories__sectionWrapper {
+    padding: 0 20px;
+  }
+  .accessories--sectionHeading {
+    margin-bottom: 40px;
+  }
+  .accessories--sectionHeading::after {
+    position: unset;
+  }
+  .accessories__itemWrapper {
+    padding: 0 30px;
+  }
+  /* === accessories === */
 }
 /* ========================= device (xs 0 > 576) ========================= */
 
@@ -345,6 +361,18 @@
     padding-right: unset;
   }
   /* === sale === */
+  /* === accessories === */
+  #accessories {
+    padding: 50px 0;
+  }
+  .accessories__sectionWrapper {
+    padding: 0 20px;
+  }
+  .accessories--sectionHeading {
+    margin-bottom: 40px;
+  }
+
+  /* === accessories === */
 }
 /* ========================= device (sm 576 > 768) ========================= */
 
@@ -487,6 +515,21 @@
     padding-right: unset;
   }
   /* === sale === */
+  /* === accessories === */
+  #accessories {
+    padding: 50px 0;
+  }
+  .accessories__sectionWrapper {
+    padding: 0 40px;
+  }
+  .accessories--sectionHeading {
+    margin-bottom: 40px;
+  }
+  .accessories__item {
+    max-width: 230px;
+  }
+
+  /* === accessories === */
 }
 /* ========================= device (md 768 > 992) ========================= */
 
@@ -567,6 +610,18 @@
     padding-right: unset;
   }
   /* === sale === */
+  /* === accessories === */
+  .accessories__sectionWrapper {
+    padding: 0 40px;
+  }
+  .accessories--sectionHeading {
+    margin-bottom: 60px;
+  }
+  .accessories__item {
+    max-width: 270px;
+  }
+
+  /* === accessories === */
 }
 /* ========================= device (lg 992 > 1200) ========================= */
 
@@ -631,9 +686,18 @@
     padding: 0 40px;
   }
   .sale__favoriteContentWrapper {
-    max-width: 620px;
+    max-width: 610px;
   }
   /* === sale === */
+   /* === accessories === */
+  .accessories__sectionWrapper {
+    padding: 0 40px;
+  }
+  .accessories__item {
+    max-width: 280px;
+  }
+
+  /* === accessories === */
 }
 /* ========================= device (xl 1200 > 1400) ========================= */
 /* ========================= device (xxl 1400 >>) ========================= */
