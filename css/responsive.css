@@ -227,6 +227,27 @@
     bottom: -100%;
   }
   /* === team === */
+  /* === faq === */
+  .faq__sectionWrapper {
+    padding: 0 20px;
+  }
+  .faq--sectionHeading {
+    margin-bottom: 40px;
+  }
+  .faq--sectionHeading::after,
+  .faq__itemWrapper::before,
+  .faq__itemWrapper::after {
+    position: unset;
+  }
+  .faq__itemWrapper {
+    justify-content: center;
+    row-gap: 30px;
+  }
+  .faq__itemContentWrapper {
+    max-width: 340px;
+    gap: 25px;
+  }
+  /* === faq === */
 }
 /* ========================= device (xs 0 > 576) ========================= */
 
@@ -408,6 +429,25 @@
     padding: 20px 30px;
   }
   /* === team === */
+  /* === faq === */
+  .faq__sectionWrapper {
+    padding: 0 20px;
+  }
+  .faq--sectionHeading {
+    margin-bottom: 50px;
+  }
+  .faq__itemWrapper::before,
+  .faq__itemWrapper::after {
+    position: unset;
+  }
+  .faq__itemWrapper {
+    justify-content: center;
+    row-gap: 50px;
+  }
+  .faq__itemContentWrapper {
+    max-width: 470px;
+  }
+  /* === faq === */
 }
 /* ========================= device (sm 576 > 768) ========================= */
 
@@ -575,6 +615,22 @@
     justify-content: center;
   }
   /* === team === */
+  /* === faq === */
+  .faq__sectionWrapper {
+    padding: 0 40px;
+  }
+  .faq--sectionHeading {
+    margin-bottom: 70px;
+  }
+  .faq__itemWrapper::before,
+  .faq__itemWrapper::after {
+    position: unset;
+  }
+  .faq__itemWrapper {
+    justify-content: center;
+    row-gap: 50px;
+  }
+  /* === faq === */
 }
 /* ========================= device (md 768 > 992) ========================= */
 
@@ -673,6 +729,20 @@
     justify-content: center;
   }
   /* === team === */
+  /* === faq === */
+  .faq__sectionWrapper {
+    padding: 0 40px;
+  }
+
+  .faq__itemWrapper {
+    justify-content: center;
+    row-gap: 100px;
+    column-gap: 70px;
+  }
+  .faq__itemContentWrapper {
+    max-width: 400px;
+  }
+  /* === faq === */
 }
 /* ========================= device (lg 992 > 1200) ========================= */
 
@@ -756,6 +826,11 @@
     justify-content: center;
   }
   /* === team === */
+  /* === faq === */
+  .faq__sectionWrapper {
+    padding: 0 40px;
+  }
+  /* === faq === */
 }
 /* ========================= device (xl 1200 > 1400) ========================= */
 /* ========================= device (xxl 1400 >>) ========================= */

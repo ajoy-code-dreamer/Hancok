@@ -1280,7 +1280,7 @@ body {
 .faq__itemContentWrapper {
   display: flex;
   gap: 42px;
-  width: 540px;
+  max-width: 540px;
   color: var(--white-clr);
 }
 .faq__serial {
