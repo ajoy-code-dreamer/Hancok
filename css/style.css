@@ -1109,11 +1109,10 @@ body {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  column-gap: 20px;
-  row-gap: 30px;
+  gap: 30px;
 }
 .team__item {
-  max-width: 650px;
+  max-width: 645px;
   max-height: 430px;
   cursor: pointer;
 }

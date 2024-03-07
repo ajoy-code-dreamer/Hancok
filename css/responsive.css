@@ -174,9 +174,7 @@
   .sale--sectionTitle::before {
     position: unset;
   }
-  .sale__item {
-    max-width: 160px;
-  }
+
   .sale__favoritePartWrapper {
     justify-content: center;
     row-gap: 30px;
@@ -205,6 +203,30 @@
     padding: 0 30px;
   }
   /* === accessories === */
+  /* === team === */
+  #team {
+    padding: 50px 0;
+  }
+  .team__sectionWrapper {
+    padding: 0 20px;
+  }
+  .team--sectionTitle::before {
+    position: unset;
+  }
+  .team__itemWrapper {
+    justify-content: center;
+  }
+  .team__details {
+    display: none;
+  }
+  .team__socialIconWrapper {
+    align-items: unset;
+  }
+  .team__overlay {
+    padding: 10px 30px;
+    bottom: -100%;
+  }
+  /* === team === */
 }
 /* ========================= device (xs 0 > 576) ========================= */
 
@@ -371,8 +393,21 @@
   .accessories--sectionHeading {
     margin-bottom: 40px;
   }
-
   /* === accessories === */
+  /* === team === */
+  #team {
+    padding: 50px 0;
+  }
+  .team__sectionWrapper {
+    padding: 0 20px;
+  }
+  .team__itemWrapper {
+    justify-content: center;
+  }
+  .team__overlay {
+    padding: 20px 30px;
+  }
+  /* === team === */
 }
 /* ========================= device (sm 576 > 768) ========================= */
 
@@ -528,8 +563,18 @@
   .accessories__item {
     max-width: 230px;
   }
-
   /* === accessories === */
+  /* === team === */
+  #team {
+    padding: 50px 0;
+  }
+  .team__sectionWrapper {
+    padding: 0 40px;
+  }
+  .team__itemWrapper {
+    justify-content: center;
+  }
+  /* === team === */
 }
 /* ========================= device (md 768 > 992) ========================= */
 
@@ -620,8 +665,14 @@
   .accessories__item {
     max-width: 270px;
   }
-
   /* === accessories === */
+  .team__sectionWrapper {
+    padding: 0 40px;
+  }
+  .team__itemWrapper {
+    justify-content: center;
+  }
+  /* === team === */
 }
 /* ========================= device (lg 992 > 1200) ========================= */
 
@@ -689,15 +740,22 @@
     max-width: 610px;
   }
   /* === sale === */
-   /* === accessories === */
+  /* === accessories === */
   .accessories__sectionWrapper {
     padding: 0 40px;
   }
   .accessories__item {
     max-width: 280px;
   }
-
   /* === accessories === */
+  /* === accessories === */
+  .team__sectionWrapper {
+    padding: 0 40px;
+  }
+  .team__itemWrapper {
+    justify-content: center;
+  }
+  /* === team === */
 }
 /* ========================= device (xl 1200 > 1400) ========================= */
 /* ========================= device (xxl 1400 >>) ========================= */
